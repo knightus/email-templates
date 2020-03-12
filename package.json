@@ -1,8 +1,7 @@
 {
   "name": "email-templates",
-  "version": "0.0.0",
-  "main": "index.js",
-  "author": "duong-genetica <duong@genefrienway.com>",
+  "version": "1.0.0",
+  "author": "knightus <coldkiller131@gmail.com>",
   "license": "MIT",
   "private": true,
   "customConfigs": {
