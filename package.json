@@ -1,0 +1,65 @@
+{
+  "name": "email-templates",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "duong-genetica <duong@genefrienway.com>",
+  "license": "MIT",
+  "private": true,
+  "customConfigs": {
+    "paths": {
+      "relative": {
+        "source": "source",
+        "sourceAssets": "source/assets",
+        "sourceImages": "source/assets/images",
+        "sourceFonts": "source/assets/fonts",
+        "sourceScripts": "source/scripts",
+        "sourceStyles": "source/styles",
+        "sourceTemplates": "source/templates",
+        "sourceData": "source/assets/data",
+        "build": "build",
+        "buildAssets": "build/assets",
+        "buildImages": "build/assets/images",
+        "buildFonts": "build/assets/fonts",
+        "buildScripts": "build/scripts",
+        "buildStyles": "build/styles",
+        "buildTemplates": "build"
+      }
+    },
+    "server": {
+      "browserSync": {
+        "server": {
+          "baseDir": "build",
+          "directory": true
+        },
+        "open": false,
+        "files": [],
+        "reloadDelay": 300
+      },
+      "vorlon": {
+        "enable": true
+      }
+    },
+    "styles": {
+      "filters": []
+    },
+    "scripts": {
+      "browserify": {}
+    }
+  },
+  "dependencies": {
+    "app-root-dir": "1.0.2",
+    "browser-sync": "2.26.7",
+    "gulp": "4.0.2",
+    "gulp-data": "1.3.1",
+    "gulp-filter": "6.0.0",
+    "gulp-imagemin": "7.1.0",
+    "gulp-inline-css": "3.5.0",
+    "gulp-less": "4.0.1",
+    "gulp-plumber": "1.2.1",
+    "gulp-swig": "0.9.1",
+    "gulp-util": "3.0.8",
+    "imagemin-pngquant": "8.0.0",
+    "less": "3.11.1",
+    "require-dir": "1.2.0"
+  }
+}

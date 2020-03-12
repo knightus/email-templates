@@ -1,0 +1,80 @@
+/**
+ * - Settings: Colors -
+ **********************
+ */
+@color-white: #FFFFFF;
+@color-black: #000000;
+@color-alabaster: #F7F7F7;
+@color-alto: #CFCFCF;
+@color-lochmara: #0388CD;
+@color-dove-gray: #666666;
+@color-dusty-gray: #999999;
+@color-valencia: #D33C42;
+@color-mercury: #E3E3E3;
+@color-astronaut: #25396C;
+@color-wild-sand: #F6F6F6;
+@color-mine-shaft: #333333;
+@color-concrete: #F2F2F2;
+@color-biscay: #1F3368;
+@color-limeade: #23A500;
+@color-alizarin-crimson: #DC1E2A;
+@color-saffron: #F5D535;
+@color-athens-gray: #f3F4F7;
+@color-cardinal: #ce2525;
+@color-endeavor: #0054a1;
+@color-silver: #CCCCCC;
+@color-tundora: #4B4B4B;
+@color-ebony-clay: #2D3449;
+@color-raven: #72798A;
+@color-big-stone: #15203D;
+@color-gallery: #EDEDED;
+@color-monza: #D10A11;
+@color-silver-chalice: #ADADAD;
+@color-red-ribbon: #E1052B;
+@color-spring-wood: #F7F3EE;
+@color-azure-radiance: #0095FF;
+
+@colornames-list:
+        white,
+        black,
+        alabaster,
+        alto,
+        lochmara,
+        dove-gray,
+        dusty-gray,
+        valencia,
+        mercury,
+        astronaut,
+        wild-sand,
+        mine-shaft,
+        concrete,
+        biscay,
+        limeade,
+        alizarin-crimson,
+        saffron,
+        athens-gray,
+        cardinal,
+        endeavor,
+        silver,
+        tundora,
+        ebony-clay,
+        raven,
+        big-stone,
+        gallery,
+        monza,
+        silver-chalice,
+        red-ribbon,
+        spring-wood,
+        azure-radiance,
+;
+
+//.color(@value) {
+//  color: @value;
+//}
+
+each(@colornames-list, {
+  .color-@{value} {
+    color: ~'@{color-@{value}}';
+  }
+
+})
